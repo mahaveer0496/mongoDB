@@ -1,0 +1,16 @@
+{
+  "name": "node_todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon playground/mongodbconnect.js",
+    "test": "nodemon playground/mongodbfind.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.5"
+  }
+}
