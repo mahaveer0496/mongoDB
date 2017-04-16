@@ -9,7 +9,13 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
       return console.log(`unable to connect to db`);
    console.log(`connected to db`);
 
-    db.collection('Todos').findOneAndDelete({text: 'do something else'}).then((result)=>{
+   db.collection('Todos').findOneAndUpdate({
+      text: "shit works"
+   },{
+      text: "shit does works"
+   },{
+      returnOriginal: false
+   }).then((result) => {
       console.log(result);
    })
    db.close();
